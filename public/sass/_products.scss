@@ -1,0 +1,127 @@
+.banner {
+  &__shop {
+    margin-top: 140px;
+    padding-top: 9%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: relative;
+  }
+  &__shop-left {
+  }
+  &__shop-title {
+    color: $white;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 8px;
+  }
+  &-shop-breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 32px;
+    color: $white;
+  }
+  &-shop-breadcrumb-start {
+    margin-right: 8px;
+    color: $white;
+    text-decoration: none;
+
+    display: block;
+  }
+  &-shop-breadcrumb-end {
+    margin-left: 10px;
+    color: $white;
+  }
+  &__shop-right {
+    min-width: 280px;
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 47px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 14px;
+    position: relative;
+  }
+  &__shop-right::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 91%;
+    width: 100%;
+    height: 17px;
+    background-color: transparent;
+  }
+
+  &__shop-icon-down {
+    color: #fff;
+    margin-right: 15px;
+  }
+}
+.fill {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.25);
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.banner__shop-form {
+  position: absolute;
+  bottom: 9%;
+  z-index: 2;
+  display: flex;
+  width: 72.5%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner__shop-right-select {
+  margin-left: 13px;
+  color: $white;
+  cursor: context-menu;
+}
+
+.drop__down-list {
+  position: absolute;
+  list-style: none;
+  width: 100%;
+  top: 120%;
+  background-color: $white;
+  display: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  overflow: hidden;
+}
+
+.drop__down-item {
+  padding: 3px 0;
+  padding-left: 12px;
+  cursor: pointer;
+}
+
+.drop__down-item:hover {
+  background-color: rgba(237, 215, 215, 0.4);
+  color: $black;
+}
+
+.banner__shop-right:hover .drop__down-list {
+  display: block;
+}
+
+.content__home-products-form {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 50px 15px;
+}
+
+.content__products-mt {
+  margin-top: 45px;
+}
+
+.mt100 {
+  margin-top: 100px;
+}

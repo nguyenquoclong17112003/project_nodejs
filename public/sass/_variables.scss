@@ -1,0 +1,41 @@
+$white: #fff;
+$black: #000;
+$primary-color: #44cdc7;
+$le: 370px;
+$ti: calc(100% - $le);
+
+@mixin btn-all($background: background-color, $color: color) {
+  border: none;
+  width: 120px;
+  display: flex;
+  height: 47px;
+  background-color: $background;
+  color: $color;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+@mixin btnCart {
+  border: none;
+  width: 131px;
+  display: flex;
+  background: transparent;
+  height: 42px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 14px;
+  color: rgb(239, 44, 44);
+  border: 2px solid rgb(239, 44, 44);
+  font-weight: 500;
+  font-size: 11.7px;
+  text-decoration: none;
+  outline: none;
+  border-radius: 13px;
+}

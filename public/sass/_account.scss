@@ -1,0 +1,131 @@
+.page {
+  &__account {
+    display: grid;
+    grid-template-columns: 673px 845px;
+    height: 100vh;
+  }
+  &__account-left {
+    position: relative;
+  }
+  &__account-left-img {
+    height: 100%;
+    object-fit: cover;
+  }
+  &__account-right {
+    display: flex;
+    padding: 0 210px;
+  }
+}
+.form {
+  &-intern {
+    margin: 0 auto;
+    margin-top: 120px;
+    width: 100%;
+  }
+  &-intern-heading {
+    color: #00b63e;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 600;
+  }
+}
+
+.page__account-left-background {
+  position: absolute;
+  height: 100%;
+  top: 0%;
+  width: 100%;
+  background: linear-gradient(
+    206.69deg,
+    rgba(56, 191, 118, 0.7) 12.29%,
+    rgba(0, 90, 136, 0.7) 93.59%
+  );
+}
+
+.page__account-left-slogan {
+  position: absolute;
+  color: $white;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.form {
+  &-group-account {
+    margin-bottom: 55px;
+  }
+  &-group-account:nth-child(1) {
+    margin-top: 60px;
+  }
+  &-intern-input {
+    border: none;
+    position: relative;
+    outline: none;
+    border-bottom: 1px solid $black;
+    width: 100%;
+  }
+  &-intern-label {
+    position: absolute;
+    left: 57.5%;
+    transition: all 0.4s linear;
+    color: #99a9c2;
+    user-select: none;
+    pointer-events: none;
+  }
+  &-intern-input:not(:placeholder-shown) + .form-intern-label,
+  &-intern-input:focus + .form-intern-label {
+    transform: translateY(-19px);
+    font-size: 12px;
+    transition: all 0.4s linear;
+    color: #00b63e;
+  }
+  &-intern-input:focus {
+    border-bottom: 1px solid #00b63e;
+  }
+}
+
+.form-intern-input::selection {
+  background-color: #00b63e;
+  color: $white;
+}
+
+.form-intern-btn {
+  @include btn-all(#00b63e, $white);
+  padding-left: 6px;
+}
+
+.form-intern-btn:hover {
+  opacity: 0.8;
+}
+
+.home-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.form-intern-back-btn {
+  @include btn-all(transparent, #00b63e);
+  border: 1px solid #00b63e;
+  padding-right: 6px;
+}
+
+.form-intern-back-btn:hover {
+  background-color: rgba(0, 182, 62, 0.1);
+}
+
+.icon-right-btn-intern {
+  margin: 0 7px;
+}
+
+.icon-left-btn-intern {
+  margin: 0 10px;
+}
+
+.form-intern-back-btn-link {
+  text-decoration: none;
+  color: #00b63e;
+}

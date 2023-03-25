@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mỹ Phẩm</title>
+    <link rel="shortcut icon" href="/images/logo.jpg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/sass/index.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- ! header -->
+      <header class="header">
+        <div class="grid">
+          <nav class="header__navbar">
+            <img
+              src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/logo.png"
+              alt=""
+              class="header__navbar-logo"
+            />
+            <ul class="header__navbar-list">
+              <li class="header__navbar-item">
+                <a href="/form-trang-chu" class="header__navbar-item-link"
+                  >Trang Chủ</a
+                >
+              </li>
+              <li class="header__navbar-item">
+                <a
+                  href="/form-gioi-thieu"
+                  class="header__navbar-item-link active"
+                  >Giới Thiệu</a
+                >
+              </li>
+              <li class="header__navbar-item">
+                <a href="/form-san-pham" class="header__navbar-item-link"
+                  >Sản Phẩm</a
+                >
+              </li>
+              <li class="header__navbar-item">
+                <a href="/form-tin-tuc" class="header__navbar-item-link"
+                  >Tin Tức
+                </a>
+              </li>
+              <li class="header__navbar-item">
+                <a href="/form-lien-he" class="header__navbar-item-link"
+                  >Liên Hệ</a
+                >
+              </li>
+            </ul>
+            <div class="header__navbar-btn">
+              <!-- ! User login -->
+              <i class="header__icon-user fas fa-user"></i>
+              <!-- ! User Account -->
+              <div class="header__navbar-user">
+                <img
+                  src="/images/member2.jpg"
+                  alt=""
+                  class="header__navbar-user-img"
+                />
+                <h3 class="header__navbar-user-name">Quốc Long</h3>
+
+                <ul class="header__navbar-user-list">
+                  <li class="header__navbar-user-item">Tài khoản của tôi</li>
+                  <li class="header__navbar-user-item">Đơn mua</li>
+                  <li class="header__navbar-user-item">Đăng xuất</li>
+                </ul>
+              </div>
+              <!-- ! Truyền vào no-cart sẽ hiện không có sản phẩm , truyền vào co-cart sẽ mất sản phẩm
+              sẽ mất sản phẩm  -->
+              <div class="header__navbar-form-cart">
+                <div class="header__navbar-number-products">1</div>
+                <a href="/form-gio-hang" class="heading__navbar-cart-link">
+                  <i class="header__icon-cart fas fa-shopping-cart"></i>
+                </a>
+
+                <!-- ! There are Products -->
+                <div class="header__navbar-there-are-cart">
+                  <!-- ! no-cart -->
+                  <img
+                    src="/images/no-cart.png"
+                    alt=""
+                    class="header__navbar-no-cart-img"
+                  />
+                  <h3 class="header__navbar-no-cart-heading">
+                    Chưa Có Sản Phẩm
+                  </h3>
+                  <!-- ! no-cart -->
+
+                  <!-- ! Có cart -->
+                  <div class="header__navbar-there-are-start">
+                    <img
+                      src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/3461949333418s01d20170826t1549-500x500.jpg"
+                      alt=""
+                      class="header__navbar-there-are-img"
+                    />
+                    <div class="header__navbar-there-are-content">
+                      <h3 class="header__navbar-there-are-title">
+                        Kem dưỡng da AHA
+                      </h3>
+                      <p class="header__navbar-there-are-number">
+                        1 x
+                        <span class="header__navbar-there-are-price"
+                          >420.000đ</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <p class="header__navbar-there-are-totalprice">
+                    Tổng số phụ:
+                    <span class="header__navbar-there-are-price">420.000đ</span>
+                  </p>
+                  <a href="/form-gio-hang" class="header__navbar-watch-cart"
+                    >Xem giỏ hàng</a
+                  >
+                  <a href="" class="header__navbar-watch-pay">Thanh Toán</a>
+                  <!-- ! co-cart -->
+                </div>
+              </div>
+              <i id="icon-search" class="header__icon-search fas fa-search"></i>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <div class="advise">
+        <div class="grid">
+          <h3 class="advise-heading">Giới thiệu</h3>
+          <h3 class="advise-desc">
+            Shop mỹ phẩm Xinh trọng chữ tín nên mua bán phải rõ ràng. Shop chúng
+            tôi đặt phương châm lấy uy tín làm đầu và là thước đo cho thành công
+            trong việc kinh doanh trên mạng trực tuyến. Hơn nữa quý khách có thể
+            đến cửa hàng để xem sản phẩm trực tiếp.
+          </h3>
+          <p class="advise-content">
+            <span class="advise-content-bold">Chúng tôi cam kết:</span> – Các
+            mặt hàng đăng bán là chính xác như mô tả (kiểu dáng, kích thước, màu
+            sắc). – Giá trên web đăng là giá fixed – không giảm được nữa. – Nếu
+            muốn mua giá rẻ hơn vui lòng tham khảo thường xuyên các đợt bán hàng
+            giá thanh lý. – Shop sẽ cập nhật ngay trên website khi giá sản phẩm
+            thay đổi hoặc hết hàng. – Còn đăng tin là còn hàng. Nếu bạn tới mua
+            được báo hết hàng dù trên web bạn vẫn còn thấy chỉ có thể là trong
+            thời gian bạn di chuyển tới shop thì người khác vừa mới đặt hàng.
+            Cách tốt nhất để chắc chắn là gọi điện thoại trước khi tới nếu bạn ở
+            xa.
+          </p>
+
+          <p class="advise-content second">
+            Khi mua hàng ở shop chúng tôi, quý khách sẽ hoàn toàn yên tâm về số
+            lượng cũng như chất lượng sản phẩm và sự phục vụ. Những sản phẩm của
+            chúng tôi đều có xuất xứ rõ ràng và có chọn lọc. Chúng tôi luôn lấy
+            uy tín làm đầu nên sẽ không bao giờ bán hàng giả hàng kém chất
+            lượng. Sản phẩm chúng tôi bán cho khách hàng là những sản phẩm chọn
+            lọc có nguồn gốc từ những mặt hàng của các công ty lớn và có thương
+            hiệu uy tín trên thị trường. Đặc biệt là hàng mỹ phẩm chúng tôi luôn
+            cam kết chỉ bán hàng chính hãng 100%, quý khách có thể tải ứng dụng
+            để kiểm tra mã code. Shop trình bày rất sạch sẽ và rõ ràng, rất tiện
+            lợi cho khách khi đến mua hàng trực tiếp. Nhân viên tư vấn nhiệt
+            tình, am hiểu về sản phẩm. Shop nằm tại trung tâm quận 7, rất tiện
+            cho các bạn ghé thăm thường xuyên.
+          </p>
+
+          <p class="advise-content three">
+            <span class="advise-content-bold">Đối với mặt hàng mỹ phẩm:</span>
+            Shop là nơi tập hợp các mặt hàng mỹ phẩm chính hãng từ nhiều thương
+            hiệu nổi tiếng khác nhau, rất phong phú, đa dạng, luôn cập nhât
+            nhiều mặt hàng để đáp ứng nhu cầu của khách. Bạn không còn phải băn
+            khoăn khi mua hàng online vì sợ mua phải hàng nhái, hàng giả, hàng
+            cận date. Đến với shop thì bạn hoàn toàn yên tâm về vấn đề này. Shop
+            mỹ phẩm xinh cam kết chỉ bán hàng chính hãng với giá cạnh tranh nhất
+            thị trường. Với mong muốn mang đến cho khách hàng cơ hội sở hữu
+            những thương hiệu chất lượng với giá hấp dẫn, shop không ngừng nỗ
+            lục trong việc đem đến cho khách hàng hàng chục thương hiệu nổi
+            tiếng với nhiều sản phẩm được cập nhât mỗi ngày. Với cam kết 100%
+            sản phẩm chính hãng – 100% hài lòng, shop sẽ mang đến cho khách hàng
+            sự hài lòng và niềm vui mua sắm. Shop bán các mặt hàng từ phổ thông
+            đến cao cấp, chắc chắn giá cạnh tranh nhất thị trường hiện nay. Các
+            bạn cứ thử dùng một lần sản phẩm của shop xem có giống sản phẩm của
+            bạn đã từng sử dụng hay không? Đừng bất ngờ vì giá rẻ mà lo ngại
+            chất lượng. Cam kết chất lượng, xem hàng thoải mái khi tới shop mua.
+            Hãy là những người tiêu dùng thông minh.
+          </p>
+
+          <p class="advise-content four">
+            <span class="advise-content-bold"
+              >Vì đến với shop, quý khách sẽ được:</span
+            >
+            + Chất lượng đảm bảo: hầu hết các mặt hàng đều được shop lựa chọn
+            cẩn thận. Đây là mặt hàng mỹ phẩm làm đẹp, có ảnh hưởng đến sức
+            khỏe, nhan sắc của khách hàng nên chất lượng vẫn là yếu tố hàng đầu
+            shop quan tâm. Khi mua dòng sản phẩm tùy theo sở thích, điều kiện…
+            các bạn chọn sản phẩm, shop luôn nói rõ đây là hàng của nước nào để
+            các bạn khỏi thắc mắc. + Giá cả hợp lý: khi xem qua các bạn sẽ bất
+            ngờ vì giá shop đưa ra rẻ hơn nhiều so với các shop khác và có đôi
+            chút lo lắng “ liệu sản phẩm có tốt không?”. Mỗi shop có một chiến
+            lược kinh doanh riêng, tuy nhiên giá shop rẻ hơn vì shop không tốn
+            nhiều chi phí cho việc kinh doanh do shop bán hàng online tại nhà.
+            Chính chủ shop đứng ra chịu trách nhiệm tư vấn và bán hàng nên không
+            tốn kém tiền nhân viên. Các bạn có thể thử một lần dùng sản phẩm của
+            shop để so sánh với các sản phẩm mà các bạn đã dùng xem có khác gì
+            không. Có sản phẩm giá của shop thấp hơn, cũng có sản phẩm cao hơn
+            tùy vào nguồn hàng và số lượng hàng shop mỹ phẩm xinh lấy.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="grid">
+          <div class="footer__content">
+            <!-- !Item 1 -->
+
+            <ul class="footer__content-list">
+              <h3 class="footer__content-heading">THÔNG TIN LIÊN HỆ</h3>
+              <li class="footer__content-item">
+                25A Trần Nguyên Hãn – Nha Trang
+              </li>
+              <li class="footer__content-item">
+                Hotline: 091 353 3457 – 09 1425 2542
+              </li>
+              <li class="footer__content-item">Email : zinzinfood@gmail.com</li>
+              <li class="footer__content-item">Facebook : fb.com/zinzinfood</li>
+            </ul>
+            <!-- !Item 2 -->
+            <ul class="footer__content-list">
+              <h3 class="footer__content-heading">HƯỚNG DẪN</h3>
+              <li class="footer__content-item">Sản phẩm làm đẹp da</li>
+              <li class="footer__content-item">Chăm sóc tóc</li>
+              <li class="footer__content-item">Chăm sóc & dưỡng da mặt</li>
+              <li class="footer__content-item">Thực phẩm chức năng</li>
+              <li class="footer__content-item">Nước hoa nam</li>
+              <li class="footer__content-item">Phụ kiện trang điểm</li>
+            </ul>
+
+            <!-- !Item 3 -->
+            <ul class="footer__content-list">
+              <h3 class="footer__content-heading">FANPAGE FACEBOOK</h3>
+
+              <img
+                src="images/imgfooter.png"
+                alt=""
+                class="footer__content-img"
+              />
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ! modal -->
+    <div class="modal" id="modal-one">
+      <div class="modal__container">
+        <i id="close" class="modal__icon-close-login fas fa-times"></i>
+        <div class="modal__container-form">
+          <h3 class="modal__container-heading">Login</h3>
+          <form action="" method="post" id="form">
+            <div id="form-group-one" class="form-group">
+              <input
+                type="text"
+                class="modal__container-input"
+                placeholder=" "
+                id="first-input"
+              />
+              <label for="first-input" class="modal__container-label-one"
+                >Username</label
+              >
+            </div>
+            <div class="form-group" id="form-group-two">
+              <input
+                type="password"
+                class="modal__container-input"
+                placeholder=" "
+                id="second-input"
+              />
+              <label for="first-input" class="modal__container-label-two"
+                >Password</label
+              >
+            </div>
+            <button class="modal__container-btn">
+              <span></span><span></span><span></span><span></span>SUBMIT
+            </button>
+          </form>
+          <a href="/form-create-account" class="header__create-count"
+            >Create an account ?</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- ! modal-second -->
+    <div id="modal-two" class="modal-second">
+      <i class="modal__second-icon-close fas fa-times"></i>
+      <div class="modal__second-container">
+        <div class="modal-second-form">
+          <input
+            type="text"
+            class="modal-second-input"
+            placeholder="Nhập từ khóa tìm kiếm..."
+          />
+          <i class="modal__icon-search fas fa-search"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/javascripts/index.js"></script>
+</html>

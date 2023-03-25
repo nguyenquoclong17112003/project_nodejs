@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mỹ Phẩm</title>
+    <link rel="shortcut icon" href="/images/logo.jpg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/sass/index.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- ! header -->
+      <header class="header">
+        <div class="grid">
+          <nav class="header__navbar">
+            <img
+              src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/logo.png"
+              alt=""
+              class="header__navbar-logo"
+            />
+            <ul class="header__navbar-list">
+              <li class="header__navbar-item">
+                <a href="/form-trang-chu" class="header__navbar-item-link"
+                  >Trang Chủ</a
+                >
+              </li>
+              <li class="header__navbar-item">
+                <a href="/form-gioi-thieu" class="header__navbar-item-link"
+                  >Giới Thiệu</a
+                >
+              </li>
+              <li class="header__navbar-item">
+                <a href="/form-san-pham" class="header__navbar-item-link"
+                  >Sản Phẩm</a
+                >
+              </li>
+              <li class="header__navbar-item">
+                <a href="/form-tin-tuc" class="header__navbar-item-link"
+                  >Tin Tức
+                </a>
+              </li>
+              <li class="header__navbar-item">
+                <a href="/form-lien-he" class="header__navbar-item-link"
+                  >Liên Hệ</a
+                >
+              </li>
+            </ul>
+            <div class="header__navbar-btn">
+              <!-- ! User login -->
+              <i class="header__icon-user fas fa-user"></i>
+              <!-- ! User Account -->
+              <div class="header__navbar-user">
+                <img
+                  src="/images/member2.jpg"
+                  alt=""
+                  class="header__navbar-user-img"
+                />
+                <h3 class="header__navbar-user-name">Quốc Long</h3>
+
+                <ul class="header__navbar-user-list">
+                  <li class="header__navbar-user-item">Tài khoản của tôi</li>
+                  <li class="header__navbar-user-item">Đơn mua</li>
+                  <li class="header__navbar-user-item">Đăng xuất</li>
+                </ul>
+              </div>
+              <!-- ! Truyền vào no-cart sẽ hiện không có sản phẩm , truyền vào co-cart sẽ mất sản phẩm
+              sẽ mất sản phẩm  -->
+              <div class="header__navbar-form-cart">
+                <div class="header__navbar-number-products">1</div>
+                <a href="/form-gio-hang" class="heading__navbar-cart-link">
+                  <i class="header__icon-cart fas fa-shopping-cart"></i>
+                </a>
+
+                <!-- ! There are Products -->
+                <div class="header__navbar-there-are-cart">
+                  <!-- ! no-cart -->
+                  <img
+                    src="/images/no-cart.png"
+                    alt=""
+                    class="header__navbar-no-cart-img"
+                  />
+                  <h3 class="header__navbar-no-cart-heading">
+                    Chưa Có Sản Phẩm
+                  </h3>
+                  <!-- ! no-cart -->
+
+                  <!-- ! Có cart -->
+                  <div class="header__navbar-there-are-start">
+                    <img
+                      src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/3461949333418s01d20170826t1549-500x500.jpg"
+                      alt=""
+                      class="header__navbar-there-are-img"
+                    />
+                    <div class="header__navbar-there-are-content">
+                      <h3 class="header__navbar-there-are-title">
+                        Kem dưỡng da AHA
+                      </h3>
+                      <p class="header__navbar-there-are-number">
+                        1 x
+                        <span class="header__navbar-there-are-price"
+                          >420.000đ</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <p class="header__navbar-there-are-totalprice">
+                    Tổng số phụ:
+                    <span class="header__navbar-there-are-price">420.000đ</span>
+                  </p>
+                  <a href="/form-gio-hang" class="header__navbar-watch-cart"
+                    >Xem giỏ hàng</a
+                  >
+                  <a href="" class="header__navbar-watch-pay">Thanh Toán</a>
+                  <!-- ! co-cart -->
+                </div>
+              </div>
+              <i id="icon-search" class="header__icon-search fas fa-search"></i>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <div class="form__cart">
+        <h3 class="form__cart-title">Chưa có sản phẩm nào trong giỏ hàng</h3>
+        <a href="/form-san-pham" class="form__cart-back-shop"
+          >Quay trở lại cửa hàng</a
+        >
+      </div>
+
+      <!-- ! footer -->
+      <div class="footer mt150">
+        <div class="grid">
+          <div class="footer__content">
+            <!-- !Item 1 -->
+
+            <ul class="footer__content-list">
+              <h3 class="footer__content-heading">THÔNG TIN LIÊN HỆ</h3>
+              <li class="footer__content-item">
+                25A Trần Nguyên Hãn – Nha Trang
+              </li>
+              <li class="footer__content-item">
+                Hotline: 091 353 3457 – 09 1425 2542
+              </li>
+              <li class="footer__content-item">Email : zinzinfood@gmail.com</li>
+              <li class="footer__content-item">Facebook : fb.com/zinzinfood</li>
+            </ul>
+            <!-- !Item 2 -->
+            <ul class="footer__content-list">
+              <h3 class="footer__content-heading">HƯỚNG DẪN</h3>
+              <li class="footer__content-item">Sản phẩm làm đẹp da</li>
+              <li class="footer__content-item">Chăm sóc tóc</li>
+              <li class="footer__content-item">Chăm sóc & dưỡng da mặt</li>
+              <li class="footer__content-item">Thực phẩm chức năng</li>
+              <li class="footer__content-item">Nước hoa nam</li>
+              <li class="footer__content-item">Phụ kiện trang điểm</li>
+            </ul>
+
+            <!-- !Item 3 -->
+            <ul class="footer__content-list">
+              <h3 class="footer__content-heading">FANPAGE FACEBOOK</h3>
+
+              <img
+                src="images/imgfooter.png"
+                alt=""
+                class="footer__content-img"
+              />
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

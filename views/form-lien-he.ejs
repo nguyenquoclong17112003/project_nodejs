@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mỹ Phẩm</title>
+    <link rel="shortcut icon" href="/images/logo.jpg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/sass/index.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="grid">
+          <nav class="header__navbar">
+            <img
+              src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/logo.png"
+              alt=""
+              class="header__navbar-logo"
+            />
+            <ul class="header__navbar-list">
+              <li class="header__navbar-item">
+                <a href="/form-trang-chu" class="header__navbar-item-link"
+                  >Trang Chủ</a
+                >
+              </li>
+              <li class="header__navbar-item">
+                <a href="/form-gioi-thieu" class="header__navbar-item-link"
+                  >Giới Thiệu</a
+                >
+              </li>
+              <li class="header__navbar-item">
+                <a href="/form-san-pham" class="header__navbar-item-link"
+                  >Sản Phẩm</a
+                >
+              </li>
+              <li class="header__navbar-item">
+                <a href="/form-tin-tuc" class="header__navbar-item-link"
+                  >Tin Tức
+                </a>
+              </li>
+              <li class="header__navbar-item">
+                <a href="/form-lien-he" class="header__navbar-item-link active"
+                  >Liên Hệ</a
+                >
+              </li>
+            </ul>
+            <div class="header__navbar-btn">
+              <!-- ! User login -->
+              <i class="header__icon-user fas fa-user"></i>
+              <!-- ! User Account -->
+              <div class="header__navbar-user">
+                <img
+                  src="/images/member2.jpg"
+                  alt=""
+                  class="header__navbar-user-img"
+                />
+                <h3 class="header__navbar-user-name">Quốc Long</h3>
+
+                <ul class="header__navbar-user-list">
+                  <li class="header__navbar-user-item">Tài khoản của tôi</li>
+                  <li class="header__navbar-user-item">Đơn mua</li>
+                  <li class="header__navbar-user-item">Đăng xuất</li>
+                </ul>
+              </div>
+              <!-- ! Truyền vào no-cart sẽ hiện không có sản phẩm , truyền vào co-cart sẽ mất sản phẩm
+              sẽ mất sản phẩm  -->
+              <div class="header__navbar-form-cart">
+                <div class="header__navbar-number-products">1</div>
+                <a href="/form-gio-hang" class="heading__navbar-cart-link">
+                  <i class="header__icon-cart fas fa-shopping-cart"></i>
+                </a>
+
+                <!-- ! There are Products -->
+                <div class="header__navbar-there-are-cart">
+                  <!-- ! no-cart -->
+                  <img
+                    src="/images/no-cart.png"
+                    alt=""
+                    class="header__navbar-no-cart-img"
+                  />
+                  <h3 class="header__navbar-no-cart-heading">
+                    Chưa Có Sản Phẩm
+                  </h3>
+                  <!-- ! no-cart -->
+
+                  <!-- ! Có cart -->
+                  <div class="header__navbar-there-are-start">
+                    <img
+                      src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/3461949333418s01d20170826t1549-500x500.jpg"
+                      alt=""
+                      class="header__navbar-there-are-img"
+                    />
+                    <div class="header__navbar-there-are-content">
+                      <h3 class="header__navbar-there-are-title">
+                        Kem dưỡng da AHA
+                      </h3>
+                      <p class="header__navbar-there-are-number">
+                        1 x
+                        <span class="header__navbar-there-are-price"
+                          >420.000đ</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <p class="header__navbar-there-are-totalprice">
+                    Tổng số phụ:
+                    <span class="header__navbar-there-are-price">420.000đ</span>
+                  </p>
+                  <a href="/form-gio-hang" class="header__navbar-watch-cart"
+                    >Xem giỏ hàng</a
+                  >
+                  <a href="" class="header__navbar-watch-pay">Thanh Toán</a>
+                  <!-- ! co-cart -->
+                </div>
+              </div>
+              <i id="icon-search" class="header__icon-search fas fa-search"></i>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <div class="grid">
+        <div
+          class="content__contact-banner"
+          style="
+            background-image: url(http://mypham9.maugiaodien.com/wp-content/uploads/2018/05/slider4.jpg);
+          "
+        ></div>
+
+        <div class="content__contact">
+          <div class="content__contact-list">
+            <div class="content__contact-left">
+              <h3 class="content__contact-left-heading">
+                Liên hệ với chúng tôi
+              </h3>
+              <p class="content__contact-left-desc">
+                Để không ngừng nâng cao chất lượng dịch vụ và đáp ứng tốt hơn
+                nữa các yêu cầu của Quý khách, chúng tôi mong muốn nhận được các
+                thông tin phản hồi. Nếu Quý khách có bất kỳ thắc mắc hoặc đóng
+                góp nào, xin vui lòng liên hệ với chúng tôi theo thông tin dưới
+                đây. Chúng tôi sẽ phản hồi lại Quý khách trong thời gian sớm
+                nhất.
+              </p>
+              <h3 class="content__contact-left-heading">Thông tin liên hệ</h3>
+              <p class="content__contact-left-desc">Mỹ phẩm Ajuma</p>
+              <ul class="content__contact-address">
+                <li class="content__contact-address-item">
+                  <span class="content__contact-address-heading-bold"
+                    >– Địa chỉ:</span
+                  >
+                  908 Ngô Quyền - Đà Nẵng
+                </li>
+                <li class="content__contact-address-item">
+                  <span class="content__contact-address-heading-bold"
+                    >– Hotline:</span
+                  >
+                  0839-827-923
+                </li>
+
+                <li class="content__contact-address-item">
+                  <span class="content__contact-address-heading-bold"
+                    >– Email:</span
+                  >
+                  nguyenquoclong@gmail.com
+                </li>
+                <li class="content__contact-address-item">
+                  <span class="content__contact-address-heading-bold"
+                    >– Website:</span
+                  >
+                  www.lowery.com.vn
+                </li>
+              </ul>
+            </div>
+            <div class="content__contact-right">
+              <h3 class="content__contact-left-heading">
+                Đăng ký nhận tư vấn miễn phí
+              </h3>
+              <p class="content__contact-left-desc">
+                Hãy nhập ngay thông tin vào form bên dưới để nhận được khuyến
+                mãi và những tư vấn miễn phí từ chúng tôi
+              </p>
+
+              <form action="" id="form4" method="post">
+                <div class="form-group-contact">
+                  <input
+                    type="text"
+                    class="form-intern-input"
+                    id="input-one"
+                    placeholder=" "
+                  />
+                  <label for="input-one" class="form-contact-label"
+                    >Họ và tên của bạn...</label
+                  >
+                </div>
+
+                <div class="form-group-contact">
+                  <input
+                    type="email"
+                    class="form-intern-input"
+                    id="input-two"
+                    placeholder=" "
+                  />
+                  <label for="input-two" class="form-contact-label"
+                    >Email của bạn...</label
+                  >
+                </div>
+                <div class="form-group-contact">
+                  <input
+                    type="text"
+                    class="form-intern-input"
+                    id="input-there"
+                    placeholder=" "
+                  />
+                  <label for="input-there" class="form-contact-label"
+                    >Số điện thoại...</label
+                  >
+                </div>
+                <div class="form-group-contact">
+                  <input
+                    type="text"
+                    class="form-intern-input"
+                    id="input-four"
+                    placeholder=" "
+                  />
+                  <label for="input-four" class="form-contact-label"
+                    >Nội dung liên hệ...</label
+                  >
+                </div>
+                <input type="button" value="GỬI LIÊN HỆ" class="contact-btn" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer mt150">
+        <div class="grid">
+          <div class="footer__content">
+            <!-- !Item 1 -->
+
+            <ul class="footer__content-list">
+              <h3 class="footer__content-heading">THÔNG TIN LIÊN HỆ</h3>
+              <li class="footer__content-item">
+                25A Trần Nguyên Hãn – Nha Trang
+              </li>
+              <li class="footer__content-item">
+                Hotline: 091 353 3457 – 09 1425 2542
+              </li>
+              <li class="footer__content-item">Email : zinzinfood@gmail.com</li>
+              <li class="footer__content-item">Facebook : fb.com/zinzinfood</li>
+            </ul>
+            <!-- !Item 2 -->
+            <ul class="footer__content-list">
+              <h3 class="footer__content-heading">HƯỚNG DẪN</h3>
+              <li class="footer__content-item">Sản phẩm làm đẹp da</li>
+              <li class="footer__content-item">Chăm sóc tóc</li>
+              <li class="footer__content-item">Chăm sóc & dưỡng da mặt</li>
+              <li class="footer__content-item">Thực phẩm chức năng</li>
+              <li class="footer__content-item">Nước hoa nam</li>
+              <li class="footer__content-item">Phụ kiện trang điểm</li>
+            </ul>
+
+            <!-- !Item 3 -->
+            <ul class="footer__content-list">
+              <h3 class="footer__content-heading">FANPAGE FACEBOOK</h3>
+
+              <img
+                src="images/imgfooter.png"
+                alt=""
+                class="footer__content-img"
+              />
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ! modal -->
+    <div class="modal" id="modal-one">
+      <div class="modal__container">
+        <i id="close" class="modal__icon-close-login fas fa-times"></i>
+        <div class="modal__container-form">
+          <h3 class="modal__container-heading">Login</h3>
+          <form action="" method="post" id="form">
+            <div id="form-group-one" class="form-group">
+              <input
+                type="text"
+                class="modal__container-input"
+                placeholder=" "
+                id="first-input"
+              />
+              <label for="first-input" class="modal__container-label-one"
+                >Username</label
+              >
+            </div>
+            <div class="form-group" id="form-group-two">
+              <input
+                type="password"
+                class="modal__container-input"
+                placeholder=" "
+                id="second-input"
+              />
+              <label for="first-input" class="modal__container-label-two"
+                >Password</label
+              >
+            </div>
+            <button class="modal__container-btn">
+              <span></span><span></span><span></span><span></span>SUBMIT
+            </button>
+          </form>
+          <a href="/form-create-account" class="header__create-count"
+            >Create an account ?</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- ! modal-second -->
+    <div id="modal-two" class="modal-second">
+      <i class="modal__second-icon-close fas fa-times"></i>
+      <div class="modal__second-container">
+        <div class="modal-second-form">
+          <input
+            type="text"
+            class="modal-second-input"
+            placeholder="Nhập từ khóa tìm kiếm..."
+          />
+          <i class="modal__icon-search fas fa-search"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/javascripts/index.js"></script>
+</html>

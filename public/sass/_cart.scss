@@ -1,0 +1,20 @@
+.form {
+  &__cart {
+    margin-top: 190px;
+  }
+  &__cart-title {
+    text-align: center;
+    font-size: 17px;
+    text-transform: capitalize;
+  }
+  &__cart-back-shop {
+    @include btn-all(#44cdc7, $white);
+    width: 180px;
+    border-radius: 0;
+    margin: 25px auto;
+    font-size: 14px;
+  }
+  &__cart-back-shop:hover {
+    opacity: 0.7;
+  }
+}

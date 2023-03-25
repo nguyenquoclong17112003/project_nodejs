@@ -1,0 +1,22 @@
+.banner {
+  padding-top: 37%;
+  margin-top: 100px;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+}
+.banner__adver-one {
+  position: absolute;
+  right: 11%;
+  top: 82%;
+}
+.banner__adver-two {
+  position: absolute;
+
+  top: 82%;
+}
+
+.banner_form-adver {
+  display: flex;
+  justify-content: space-between;
+}

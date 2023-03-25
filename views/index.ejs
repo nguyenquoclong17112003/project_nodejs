@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mỹ Phẩm</title>
+    <link rel="shortcut icon" href="/images/logo.jpg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/sass/index.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- ! header -->
+      <header class="header">
+        <div class="grid">
+          <nav class="header__navbar">
+            <img
+              src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/logo.png"
+              alt=""
+              class="header__navbar-logo"
+            />
+            <ul class="header__navbar-list">
+              <li class="header__navbar-item">
+                <a
+                  href="/form-trang-chu"
+                  class="header__navbar-item-link active"
+                  >Trang Chủ</a
+                >
+              </li>
+              <li class="header__navbar-item">
+                <a href="/form-gioi-thieu" class="header__navbar-item-link"
+                  >Giới Thiệu</a
+                >
+              </li>
+              <li class="header__navbar-item">
+                <a href="/form-san-pham" class="header__navbar-item-link"
+                  >Sản Phẩm</a
+                >
+              </li>
+              <li class="header__navbar-item">
+                <a href="/form-tin-tuc" class="header__navbar-item-link"
+                  >Tin Tức
+                </a>
+              </li>
+              <li class="header__navbar-item">
+                <a href="/form-lien-he" class="header__navbar-item-link"
+                  >Liên Hệ</a
+                >
+              </li>
+            </ul>
+            <div class="header__navbar-btn">
+              <!-- ! User login -->
+              <i class="header__icon-user fas fa-user"></i>
+              <!-- ! User Account -->
+              <div class="header__navbar-user">
+                <img
+                  src="/images/member2.jpg"
+                  alt=""
+                  class="header__navbar-user-img"
+                />
+                <h3 class="header__navbar-user-name">Quốc Long</h3>
+
+                <ul class="header__navbar-user-list">
+                  <li class="header__navbar-user-item">Tài khoản của tôi</li>
+                  <li class="header__navbar-user-item">Đơn mua</li>
+                  <li class="header__navbar-user-item">Đăng xuất</li>
+                </ul>
+              </div>
+              <!-- ! Truyền vào no-cart sẽ hiện không có sản phẩm , truyền vào co-cart sẽ mất sản phẩm
+              sẽ mất sản phẩm  -->
+              <div class="header__navbar-form-cart">
+                <div class="header__navbar-number-products">1</div>
+                <a href="/form-gio-hang" class="heading__navbar-cart-link">
+                  <i class="header__icon-cart fas fa-shopping-cart"></i>
+                </a>
+
+                <!-- ! There are Products -->
+                <div class="header__navbar-there-are-cart">
+                  <!-- ! no-cart -->
+                  <img
+                    src="/images/no-cart.png"
+                    alt=""
+                    class="header__navbar-no-cart-img"
+                  />
+                  <h3 class="header__navbar-no-cart-heading">
+                    Chưa Có Sản Phẩm
+                  </h3>
+                  <!-- ! no-cart -->
+
+                  <!-- ! Có cart -->
+                  <div class="header__navbar-there-are-start">
+                    <img
+                      src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/3461949333418s01d20170826t1549-500x500.jpg"
+                      alt=""
+                      class="header__navbar-there-are-img"
+                    />
+                    <div class="header__navbar-there-are-content">
+                      <h3 class="header__navbar-there-are-title">
+                        Kem dưỡng da AHA
+                      </h3>
+                      <p class="header__navbar-there-are-number">
+                        1 x
+                        <span class="header__navbar-there-are-price"
+                          >420.000đ</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <p class="header__navbar-there-are-totalprice">
+                    Tổng số phụ:
+                    <span class="header__navbar-there-are-price">420.000đ</span>
+                  </p>
+                  <a href="/form-gio-hang" class="header__navbar-watch-cart"
+                    >Xem giỏ hàng</a
+                  >
+                  <a href="" class="header__navbar-watch-pay">Thanh Toán</a>
+                  <!-- ! co-cart -->
+                </div>
+              </div>
+              <i id="icon-search" class="header__icon-search fas fa-search"></i>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- ! Banner -->
+      <div
+        class="banner"
+        style="
+          background-image: url('http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/slider_1.jpg');
+        "
+      >
+        <div class="grid">
+          <div class="banner_form-adver">
+            <img
+              src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/banner_offset_1.jpg"
+              alt=""
+              class="banner__adver-one"
+            />
+            <img
+              src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/banner_offset_2.jpg"
+              alt=""
+              class="banner__adver-two"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="content__introduce">
+          <div class="grid">
+            <h3 class="content__introduce-heading">Giới Thiệu</h3>
+            <p class="content__introduce-slogan">
+              Giới thiệu về Delta Cosmetic Việt Nam
+            </p>
+            <div class="content__introduce-divider"></div>
+            <p class="content__introduce-desc">
+              Công ty Delta Cosmetic Việt Nam trực tiếp sản xuất các dòng mỹ
+              phẩm thiên nhiên- không theo trào lưu mỹ <br />
+              phẩm công nghiệp hiện hành, công ty đi theo hướng phát triển bền
+              vững, lâu dài các dòng mỹ phẩm được làm <br />
+              handmade “BÀN TAY VÀ KHỐI ÓC CON NGƯỜI” làm chủ thể!
+            </p>
+            <div class="content__introduce-star">
+              <i class="icon-star-introduce fas fa-star"></i>
+              <i class="icon-star-introduce fas fa-star"></i>
+              <i class="icon-star-introduce fas fa-star"></i>
+              <i class="icon-star-introduce fas fa-star"></i>
+              <i class="icon-star-introduce fas fa-star"></i>
+            </div>
+            <p class="content__introduce-vn">
+              CÁC DÒNG SẢN PHẨM CỦA DELTA COSMETIC VIỆT NAM
+            </p>
+
+            <!-- ! Product -->
+            <div class="content__introduce-product">
+              <a href="" class="content__introduce-product-item-link">
+                <div class="content__introduce-product-item">
+                  <img
+                    src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/image_ab_1.png"
+                    alt=""
+                    class="content__introduce-product-item-img"
+                  />
+                  <div class="content__introduce-product-item-content">
+                    <h5 class="content__introduce-product-item-title">
+                      SON MÔI
+                    </h5>
+                    <p class="content__introduce-product-item-count">
+                      10 SẢN PHẨM
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a href="" class="content__introduce-product-item-link">
+                <div class="content__introduce-product-item organe">
+                  <img
+                    src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/image_ab_4.png"
+                    alt=""
+                    class="content__introduce-product-item-img"
+                  />
+                  <div class="content__introduce-product-item-content">
+                    <h5 class="content__introduce-product-item-title">
+                      CHĂM SÓC MẶT
+                    </h5>
+                    <p class="content__introduce-product-item-count">
+                      6 SẢN PHẨM
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a href="" class="content__introduce-product-item-link">
+                <div class="content__introduce-product-item">
+                  <img
+                    src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/image_ab_3.png"
+                    alt=""
+                    class="content__introduce-product-item-img"
+                  />
+                  <div class="content__introduce-product-item-content">
+                    <h5 class="content__introduce-product-item-title">
+                      CHĂM SÓC TÓC
+                    </h5>
+                    <p class="content__introduce-product-item-count">
+                      10 SẢN PHẨM
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a href="" class="content__introduce-product-item-link">
+                <div class="content__introduce-product-item">
+                  <img
+                    src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/image_ab_2.png"
+                    alt=""
+                    class="content__introduce-product-item-img"
+                  />
+                  <div class="content__introduce-product-item-content">
+                    <h5 class="content__introduce-product-item-title">
+                      KEM DƯỠNG DA
+                    </h5>
+                    <p class="content__introduce-product-item-count">
+                      10 SẢN PHẨM
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="content__introduce">
+          <img
+            src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/flower.png"
+            alt=""
+            class="content__introduce-img-flower"
+          />
+          <div class="grid">
+            <h3 class="content__introduce-heading">Sản Phẩm Mới</h3>
+            <p class="content__introduce-slogan">
+              Bộ sưu tập sản phẩm mới nhất từ Delta Cosmetic
+            </p>
+            <div class="content__introduce-divider"></div>
+
+            <div class="content__home-products">
+              <!-- ! item 1 -->
+              <div class="content__home-products-item">
+                <a href="" class="content__home-products-link">
+                  <div class="content__home-circle-sale">-16%</div>
+                  <img
+                    src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/8a6dcb8e287174a7f949119dc28ca2-500x500.jpg"
+                    alt=""
+                    class="content__home-products-img"
+                  />
+                  <h3 class="content__home-products-title">
+                    Sữa tắm Victoria's Secret quyến rũ
+                  </h3>
+                  <div class="content__home-products-price">
+                    <h4 class="content__home-products-price-cost">670.000đ</h4>
+                    <h4 class="content__home-products-price-sale">560.000đ</h4>
+                  </div>
+                </a>
+                <button class="content__home-products-btn">
+                  Thêm vào giỏ hàng
+                </button>
+              </div>
+              <!-- ! item 2 -->
+              <div class="content__home-products-item">
+                <a href="" class="content__home-products-link">
+                  <div class="content__home-circle-sale">-5%</div>
+                  <img
+                    src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/156dc0eb7a087348e1b8c38613020e-500x500.jpg"
+                    alt=""
+                    class="content__home-products-img"
+                  />
+                  <h3 class="content__home-products-title">
+                    Sữa dưỡng thể Hato SPF31 PA+
+                  </h3>
+                  <div class="content__home-products-price">
+                    <h4 class="content__home-products-price-cost">370.000đ</h4>
+                    <h4 class="content__home-products-price-sale">350.000đ</h4>
+                  </div>
+                </a>
+                <button class="content__home-products-btn">
+                  Thêm vào giỏ hàng
+                </button>
+              </div>
+              <!-- ! item 3 -->
+              <div class="content__home-products-item">
+                <a href="" class="content__home-products-link">
+                  <div class="content__home-circle-sale">-7%</div>
+                  <img
+                    src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/3461949333418s01d20170826t1549-500x500.jpg"
+                    alt=""
+                    class="content__home-products-img"
+                  />
+                  <h3 class="content__home-products-title">Kem dưỡng da AHA</h3>
+                  <div class="content__home-products-price">
+                    <h4 class="content__home-products-price-cost">450.000đ</h4>
+                    <h4 class="content__home-products-price-sale">420.000đ</h4>
+                  </div>
+                </a>
+                <button class="content__home-products-btn">
+                  Thêm vào giỏ hàng
+                </button>
+              </div>
+              <!-- ! item 4 -->
+              <div class="content__home-products-item">
+                <a href="" class="content__home-products-link">
+                  <div class="content__home-circle-sale">-7%</div>
+                  <img
+                    src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/1274ecabd26e54bcabcb0050da454e-500x500.jpg"
+                    alt=""
+                    class="content__home-products-img"
+                  />
+                  <h3 class="content__home-products-title">
+                    Dầu dưỡng da Phytoceuticals Argan
+                  </h3>
+                  <div class="content__home-products-price">
+                    <h4 class="content__home-products-price-cost">450.000đ</h4>
+                    <h4 class="content__home-products-price-sale">420.000đ</h4>
+                  </div>
+                </a>
+                <button class="content__home-products-btn">
+                  Thêm vào giỏ hàng
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content__introduce-page-3">
+          <div class="content__introduce-page">
+            <img
+              src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/flower.png"
+              alt=""
+              class="content__introduce-img-flower2"
+            />
+            <div class="grid">
+              <h3 class="content__introduce-heading">
+                Nhà phân phối tiêu biểu và đánh giá khách hàng
+              </h3>
+              <p class="content__introduce-slogan">
+                Danh sách các nhà phân phối, các đại lý tiêu biểu và đánh giá
+                của khách hàng về sản phẩm của Delta Cosmetic Việt Nam
+              </p>
+              <div class="content__introduce-divider"></div>
+
+              <div class="content__valuate">
+                <div class="content__valuate-left">
+                  <!-- ! list 1 -->
+                  <ul class="content__valuate-list">
+                    <h3 class="content__valuate-heading">TÊN</h3>
+                    <li class="content__valuate-item">Lê Việt Nga</li>
+                    <li class="content__valuate-item">Nguyễn Thị Hằng</li>
+                    <li class="content__valuate-item">Nguyễn Thanh Thảo</li>
+                    <li class="content__valuate-item">Thùy Linh</li>
+                    <li class="content__valuate-item">Hoa Lan</li>
+
+                    <li class="content__valuate-item">Trần Lan Anh</li>
+                    <li class="content__valuate-item">Nguyễn Thùy Châu</li>
+                  </ul>
+                  <!-- ! list 2 -->
+
+                  <ul class="content__valuate-list">
+                    <h3 class="content__valuate-heading">CẤP BẬC</h3>
+                    <li class="content__valuate-item">NPP Vàng</li>
+                    <li class="content__valuate-item">NPP</li>
+                    <li class="content__valuate-item">NPP</li>
+                    <li class="content__valuate-item">Đại Lý</li>
+                    <li class="content__valuate-item">Đại Lý</li>
+                    <li class="content__valuate-item">Đại Lý</li>
+                    <li class="content__valuate-item">Đại Lý</li>
+                  </ul>
+                  <!-- ! list 3 -->
+
+                  <ul class="content__valuate-list">
+                    <h3 class="content__valuate-heading">KHU VỰC</h3>
+                    <li class="content__valuate-item">Đà Nẵng</li>
+                    <li class="content__valuate-item">Q. Bình Tân</li>
+                    <li class="content__valuate-item">Đà Nẵng</li>
+                    <li class="content__valuate-item">Hà Nội</li>
+                    <li class="content__valuate-item">Q. Gò Vấp</li>
+                    <li class="content__valuate-item">Q. Phú Nhuận</li>
+                    <li class="content__valuate-item">Nha Trang</li>
+                  </ul>
+                </div>
+                <div class="content__valuate-right">
+                  <i
+                    class="icon__valuate-convert-right fas fa-chevron-right"
+                  ></i>
+                  <i class="icon__valuate-convert-left fas fa-chevron-left"></i>
+                  <h3 class="content__valuate-title">
+                    Nhận xét của khách hàng
+                  </h3>
+                  <div class="slider__wrapper">
+                    <div class="slider__main">
+                      <!-- ! Item 1 -->
+
+                      <div class="slider__item">
+                        <img
+                          src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/118397752_141320547652729_7265952220183523402_n.jpg"
+                          alt=""
+                          class="content__valuate-img"
+                        />
+                        <div class="content__valuate-star">
+                          <i class="icon-star-valuate fas fa-star"></i>
+                          <i class="icon-star-valuate fas fa-star"></i>
+                          <i class="icon-star-valuate fas fa-star"></i>
+                          <i class="icon-star-valuate fas fa-star"></i>
+                          <i class="icon-star-valuate fas fa-star"></i>
+                        </div>
+                        <h3 class="content__valuate-name">NGUYỄN VI AN</h3>
+                        <p class="content__valuate-desc">
+                          Mỹ phẩm thiên nhiên Delta Cosmetic nhà mình ai cũng
+                          dùng. Trải nghiệm quá sức ngoài mong đợi.
+                        </p>
+                      </div>
+                      <!-- ! Item 2 -->
+                      <div class="slider__item">
+                        <img
+                          src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/118651630_142290794222371_9111284061502622608_o.jpg"
+                          alt=""
+                          class="content__valuate-img"
+                        />
+                        <div class="content__valuate-star">
+                          <i class="icon-star-valuate fas fa-star"></i>
+                          <i class="icon-star-valuate fas fa-star"></i>
+                          <i class="icon-star-valuate fas fa-star"></i>
+                          <i class="icon-star-valuate fas fa-star"></i>
+                          <i class="icon-star-valuate fas fa-star"></i>
+                        </div>
+                        <h3 class="content__valuate-name">Quang Đạt</h3>
+                        <p class="content__valuate-desc">
+                          Sản phẩm dùng rất tốt, hợp cho mọi lứa tuổi, 100% từ
+                          thiên nhiên, rất an toàn”.
+                        </p>
+                      </div>
+                      <!-- ! Item 3 -->
+                      <div class="slider__item">
+                        <img
+                          src="/images/member.jpg"
+                          alt=""
+                          class="content__valuate-img"
+                        />
+                        <div class="content__valuate-star">
+                          <i class="icon-star-valuate fas fa-star"></i>
+                          <i class="icon-star-valuate fas fa-star"></i>
+                          <i class="icon-star-valuate fas fa-star"></i>
+                          <i class="icon-star-valuate fas fa-star"></i>
+                          <i class="icon-star-valuate fas fa-star"></i>
+                        </div>
+                        <h3 class="content__valuate-name">Văn Bình</h3>
+                        <p class="content__valuate-desc">
+                          Sản phẩm rất tốt từ serum, kem phấn tới son em đều
+                          thích.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content__introduce-page">
+          <img
+            src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/flower.png"
+            alt=""
+            class="content__introduce-img-flower3"
+          />
+          <div class="grid">
+            <h3 class="content__introduce-heading">Sản phẩm xu hướng</h3>
+            <p class="content__introduce-slogan">
+              Những sản phẩm được khách hàng lựa chọn nhiều nhất
+            </p>
+            <div class="content__introduce-divider"></div>
+
+            <div class="content__home-products">
+              <!-- ! item 1 -->
+              <div class="content__home-products-item">
+                <a href="" class="content__home-products-link">
+                  <div class="content__home-circle-sale">-20%</div>
+                  <img
+                    src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/14616598258674090137-500x500.jpg"
+                    alt=""
+                    class="content__home-products-img"
+                  />
+                  <h3 class="content__home-products-title">
+                    Tinh chất dưỡng da SK-II Facial
+                  </h3>
+                  <div class="content__home-products-price">
+                    <h4 class="content__home-products-price-cost">550.000đ</h4>
+                    <h4 class="content__home-products-price-sale">440.000đ</h4>
+                  </div>
+                </a>
+                <button class="content__home-products-btn">
+                  Thêm vào giỏ hàng
+                </button>
+              </div>
+              <!-- ! item 2 -->
+              <div class="content__home-products-item">
+                <a href="" class="content__home-products-link">
+                  <div class="content__home-circle-sale">-7%</div>
+                  <img
+                    src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/3461949333418s01d20170826t1549-500x500.jpg"
+                    alt=""
+                    class="content__home-products-img"
+                  />
+                  <h3 class="content__home-products-title">
+                    Nước hoa Dolce & Gabbana
+                  </h3>
+                  <div class="content__home-products-price">
+                    <h4 class="content__home-products-price-cost">420.000đ</h4>
+                    <h4 class="content__home-products-price-sale">390.000đ</h4>
+                  </div>
+                </a>
+                <button class="content__home-products-btn">
+                  Thêm vào giỏ hàng
+                </button>
+              </div>
+              <!-- ! item 3 -->
+              <div class="content__home-products-item">
+                <a href="" class="content__home-products-link">
+                  <div class="content__home-circle-sale">-17%</div>
+                  <img
+                    src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/ccob2szw0aqwkrw.png"
+                    alt=""
+                    class="content__home-products-img"
+                  />
+                  <h3 class="content__home-products-title">
+                    Má Hồng & Son Dior Cheek Lip
+                  </h3>
+                  <div class="content__home-products-price">
+                    <h4 class="content__home-products-price-cost">350.000đ</h4>
+                    <h4 class="content__home-products-price-sale">290.000đ</h4>
+                  </div>
+                </a>
+                <button class="content__home-products-btn">
+                  Thêm vào giỏ hàng
+                </button>
+              </div>
+              <!-- ! item 4 -->
+              <div class="content__home-products-item">
+                <a href="" class="content__home-products-link">
+                  <div class="content__home-circle-sale">-7%</div>
+                  <img
+                    src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/1274ecabd26e54bcabcb0050da454e-500x500.jpg"
+                    alt=""
+                    class="content__home-products-img"
+                  />
+                  <h3 class="content__home-products-title">
+                    Dầu dưỡng da Phytoceuticals Argan
+                  </h3>
+                  <div class="content__home-products-price">
+                    <h4 class="content__home-products-price-cost">450.000đ</h4>
+                    <h4 class="content__home-products-price-sale">420.000đ</h4>
+                  </div>
+                </a>
+                <button class="content__home-products-btn">
+                  Thêm vào giỏ hàng
+                </button>
+              </div>
+              <!-- ! item 5 -->
+              <div class="content__home-products-item">
+                <a href="" class="content__home-products-link">
+                  <div class="content__home-circle-sale">-21%</div>
+                  <img
+                    src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/2a8ba7ef3d5d12ef9a0f4954951f09de-500x500.jpg"
+                    alt=""
+                    class="content__home-products-img"
+                  />
+                  <h3 class="content__home-products-title">Son bấm Clio</h3>
+                  <div class="content__home-products-price">
+                    <h4 class="content__home-products-price-cost">290.000đ</h4>
+                    <h4 class="content__home-products-price-sale">230.000đ</h4>
+                  </div>
+                </a>
+                <button class="content__home-products-btn">
+                  Thêm vào giỏ hàng
+                </button>
+              </div>
+
+              <!-- ! item 6 -->
+              <div class="content__home-products-item">
+                <a href="" class="content__home-products-link">
+                  <div class="content__home-circle-sale">-33%</div>
+                  <img
+                    src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/a36945f7bc53a7b5d7a154f1134954ba-500x500.jpg"
+                    alt=""
+                    class="content__home-products-img"
+                  />
+                  <h3 class="content__home-products-title">
+                    SON LÌ 3CE MATTE LIP COLOR #216 #217
+                  </h3>
+                  <div class="content__home-products-price">
+                    <h4 class="content__home-products-price-cost">335.000đ</h4>
+                    <h4 class="content__home-products-price-sale">220.000đ</h4>
+                  </div>
+                </a>
+                <button class="content__home-products-btn">
+                  Thêm vào giỏ hàng
+                </button>
+              </div>
+              <!-- ! item 7 -->
+              <div class="content__home-products-item">
+                <a href="" class="content__home-products-link">
+                  <div class="content__home-circle-sale">-7%</div>
+                  <img
+                    src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/1274ecabd26e54bcabcb0050da454e-500x500.jpg"
+                    alt=""
+                    class="content__home-products-img"
+                  />
+                  <h3 class="content__home-products-title">
+                    Dầu dưỡng da Phytoceuticals Argan
+                  </h3>
+                  <div class="content__home-products-price">
+                    <h4 class="content__home-products-price-cost">450.000đ</h4>
+                    <h4 class="content__home-products-price-sale">420.000đ</h4>
+                  </div>
+                </a>
+                <button class="content__home-products-btn">
+                  Thêm vào giỏ hàng
+                </button>
+              </div>
+              <!-- ! item 8 -->
+              <div class="content__home-products-item">
+                <a href="" class="content__home-products-link">
+                  <div class="content__home-circle-sale">-7%</div>
+                  <img
+                    src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/1274ecabd26e54bcabcb0050da454e-500x500.jpg"
+                    alt=""
+                    class="content__home-products-img"
+                  />
+                  <h3 class="content__home-products-title">
+                    Dầu dưỡng da Phytoceuticals Argan
+                  </h3>
+                  <div class="content__home-products-price">
+                    <h4 class="content__home-products-price-cost">450.000đ</h4>
+                    <h4 class="content__home-products-price-sale">420.000đ</h4>
+                  </div>
+                </a>
+                <button class="content__home-products-btn">
+                  Thêm vào giỏ hàng
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content__introduce-page-5">
+          <div class="content__introduce-page">
+            <img
+              src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/flower.png"
+              alt=""
+              class="content__introduce-img-flower2"
+            />
+            <div class="grid">
+              <h3 class="content__introduce-heading">Tin tức & Mẹo</h3>
+              <p class="content__introduce-slogan">
+                Nắm bắt những tin tức & mẹo vặt mới nhất
+              </p>
+              <div class="content__introduce-divider"></div>
+
+              <div class="content__introduce-news">
+                <!-- ! item 1 -->
+                <div class="content__introduce-news-item">
+                  <a href="" class="content__introduce-news-item-link">
+                    <div class="content__introduce-news-time">
+                      <h3 class="content__introduce-news-date">09</h3>
+                      <h3 class="content__introduce-news-month">Th9</h3>
+                    </div>
+                    <img
+                      src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/mat-na-duong-da-4311.jpg"
+                      alt=""
+                      class="content__introduce-news-img"
+                    />
+                    <h3 class="content__introduce-news-heading">
+                      CHỊ EM ĐUA NHAU UỐNG COLAGEN ĐỂ CĂNG DA
+                    </h3>
+                    <p class="content__introduce-news-desc">
+                      Có thể bạn không tin nhưng chỉ uống ly nước này mỗi sáng,
+                      da bạn...
+                    </p>
+                    <button class="content__introduce-news-btn">
+                      Chi tiết
+                    </button>
+                  </a>
+                </div>
+                <!-- ! item 2 -->
+
+                <div class="content__introduce-news-item">
+                  <a href="" class="content__introduce-news-item-link">
+                    <div class="content__introduce-news-time">
+                      <h3 class="content__introduce-news-date">09</h3>
+                      <h3 class="content__introduce-news-month">Th9</h3>
+                    </div>
+                    <img
+                      src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/chong-nang-hieu-qua.jpg"
+                      alt=""
+                      class="content__introduce-news-img"
+                    />
+                    <h3 class="content__introduce-news-heading">
+                      NHIỀU NGƯỜI KHÔNG BAO GIỜ THIẾU KEM CHỐNG NẮNG
+                    </h3>
+                    <p class="content__introduce-news-desc">
+                      Không chỉ chống lại tia cực tím, kem chống nắng giúp làm
+                      chậm quá trình...
+                    </p>
+                    <button class="content__introduce-news-btn">
+                      Chi tiết
+                    </button>
+                  </a>
+                </div>
+                <!-- ! item 3 -->
+
+                <div class="content__introduce-news-item">
+                  <a href="" class="content__introduce-news-item-link">
+                    <div class="content__introduce-news-time">
+                      <h3 class="content__introduce-news-date">09</h3>
+                      <h3 class="content__introduce-news-month">Th9</h3>
+                    </div>
+                    <img
+                      src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/quy-trinh-cham-soc-da-2.jpg"
+                      alt=""
+                      class="content__introduce-news-img"
+                    />
+                    <h3 class="content__introduce-news-heading">
+                      QUY TRÌNH CÁC BƯỚC CHĂM SÓC DA BẠN CẦN BIẾT
+                    </h3>
+                    <p class="content__introduce-news-desc">
+                      Việc chăm sóc da căn bản là chúng ta phải chăm sóc da đủ
+                      cả...
+                    </p>
+                    <button class="content__introduce-news-btn">
+                      Chi tiết
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="content__support">
+            <!-- ! item 1 -->
+
+            <div class="content__support-item">
+              <img
+                src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/imgcs_1.png"
+                alt=""
+                class="content__support-img"
+              />
+              <h3 class="content__support-heading">Miễn phí ship</h3>
+              <p class="content__support-desc">Cho đơn hàng trên 1 triệu</p>
+            </div>
+            <!-- ! item 2 -->
+
+            <div class="content__support-item">
+              <img
+                src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/imgcs_2.png"
+                alt=""
+                class="content__support-img"
+              />
+              <h3 class="content__support-heading">Tư vấn miễn phí</h3>
+              <p class="content__support-desc">Không mua không sao</p>
+            </div>
+            <!-- ! item 3 -->
+
+            <div class="content__support-item">
+              <img
+                src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/imgcs_3.png"
+                alt=""
+                class="content__support-img"
+              />
+              <h3 class="content__support-heading">Tri ân</h3>
+              <p class="content__support-desc">Rất nhiều ưu đãi và quà</p>
+            </div>
+            <!-- ! item 4 -->
+
+            <div class="content__support-item">
+              <img
+                src="http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/imgcs_4.png  "
+                alt=""
+                class="content__support-img"
+              />
+              <h3 class="content__support-heading">24/7 hỗ trợ online</h3>
+              <p class="content__support-desc">Luôn có nhân viên hỗ trợ</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-email">
+          <div
+            class="content-email-slider"
+            style="
+              background-image: url('http://mypham9.maugiaodien.com/wp-content/uploads/2020/09/bg-newletter.jpg');
+            "
+          >
+            <div class="grid">
+              <div class="content-email-slider-body">
+                <div class="content-email-slider-item-left">
+                  <h3 class="content-email-slider-heading">Đăng ký nhận tin</h3>
+                  <p class="content-email-slider-desc">
+                    Bạn có thể đăng ký nhận tin khuyến mãi bất cứ lúc nào, những
+                    thông tin sẽ được gửi tới bạn nhanh nhất.
+                  </p>
+                </div>
+                <div class="content-email-slider-item-right">
+                  <input type="email" class="content-email-slider-input" />
+                  <input
+                    type="submit"
+                    value="SEND"
+                    class="content-email-slider-btn"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ! footer -->
+      <div class="footer">
+        <div class="grid">
+          <div class="footer__content">
+            <!-- !Item 1 -->
+
+            <ul class="footer__content-list">
+              <h3 class="footer__content-heading">THÔNG TIN LIÊN HỆ</h3>
+              <li class="footer__content-item">
+                25A Trần Nguyên Hãn – Nha Trang
+              </li>
+              <li class="footer__content-item">
+                Hotline: 091 353 3457 – 09 1425 2542
+              </li>
+              <li class="footer__content-item">Email : zinzinfood@gmail.com</li>
+              <li class="footer__content-item">Facebook : fb.com/zinzinfood</li>
+            </ul>
+            <!-- !Item 2 -->
+            <ul class="footer__content-list">
+              <h3 class="footer__content-heading">HƯỚNG DẪN</h3>
+              <li class="footer__content-item">Sản phẩm làm đẹp da</li>
+              <li class="footer__content-item">Chăm sóc tóc</li>
+              <li class="footer__content-item">Chăm sóc & dưỡng da mặt</li>
+              <li class="footer__content-item">Thực phẩm chức năng</li>
+              <li class="footer__content-item">Nước hoa nam</li>
+              <li class="footer__content-item">Phụ kiện trang điểm</li>
+            </ul>
+
+            <!-- !Item 3 -->
+            <ul class="footer__content-list">
+              <h3 class="footer__content-heading">FANPAGE FACEBOOK</h3>
+
+              <img
+                src="images/imgfooter.png"
+                alt=""
+                class="footer__content-img"
+              />
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ! modal -->
+    <div class="modal" id="modal-one">
+      <div class="modal__container">
+        <i id="close" class="modal__icon-close-login fas fa-times"></i>
+        <div class="modal__container-form">
+          <h3 class="modal__container-heading">Login</h3>
+          <form action="" method="post" id="form">
+            <div id="form-group-one" class="form-group">
+              <input
+                type="text"
+                class="modal__container-input"
+                placeholder=" "
+                id="first-input"
+              />
+              <label for="first-input" class="modal__container-label-one"
+                >Username</label
+              >
+            </div>
+            <div class="form-group" id="form-group-two">
+              <input
+                type="password"
+                class="modal__container-input"
+                placeholder=" "
+                id="second-input"
+              />
+              <label for="first-input" class="modal__container-label-two"
+                >Password</label
+              >
+            </div>
+            <button class="modal__container-btn">
+              <span></span><span></span><span></span><span></span>SUBMIT
+            </button>
+          </form>
+          <a href="/form-create-account" class="header__create-count"
+            >Create an account ?</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- ! modal-second -->
+    <div id="modal-two" class="modal-second">
+      <i class="modal__second-icon-close fas fa-times"></i>
+      <div class="modal__second-container">
+        <div class="modal-second-form">
+          <input
+            type="text"
+            class="modal-second-input"
+            placeholder="Nhập từ khóa tìm kiếm..."
+          />
+          <i class="modal__icon-search fas fa-search"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/javascripts/index.js"></script>
+  <script>
+    window.addEventListener("load", () => {
+      const slider = $(".content__valuate-right");
+      const sliderMain = $(".slider__main");
+      const nextSlider = document.querySelector(".icon__valuate-convert-right");
+      const prevSlider = $(".icon__valuate-convert-left");
+      const sliderItems = $$(".slider__item");
+
+      const sliderItemWidth = sliderItems[0].offsetWidth;
+
+      const sliderLength = sliderItems.length;
+      let positionX = 0;
+      let index = 0;
+
+      nextSlider.addEventListener("click", () => {
+        handleChange(1);
+      });
+
+      prevSlider.addEventListener("click", () => {
+        handleChange(0);
+      });
+
+      function handleChange(direction) {
+        if (direction === 1) {
+          if (index >= sliderLength - 1) {
+            index = sliderLength - 1;
+            return;
+          }
+          positionX = positionX - sliderItemWidth;
+          sliderMain.style = `transform: translateX(${positionX}px)`;
+          index++;
+        } else {
+          if (index <= 0) {
+            index = 0;
+            return;
+          }
+
+          positionX = positionX + sliderItemWidth;
+          sliderMain.style = `transform: translateX(${positionX}px)`;
+          index--;
+        }
+      }
+    });
+  </script>
+</html>
