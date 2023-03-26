@@ -1,17 +1,28 @@
 var createError = require("http-errors");
 var express = require("express");
 var path = require("path");
-var cors = require("cors");
-var dotenv = require("dotenv");
-var mongoose = require("mongoose");
-
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
+const cors = require("cors");
+const mongoose = require("mongoose");
+const dotenv = require("dotenv");
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 
+dotenv.config();
+mongoose.set("strictQuery", true);
+mongoose.connect(process.env.MONGODB_URL, () => {
+  console.log("Connecting to Mongo");
+  // useNewUrlParser: true,
+  // useUnifiedTopology: true,
+});
+
 var app = express();
+const authRoute = require("./components/auth");
+
+app.use("/v1/auth", authRoute);
+app.use(cors());
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));

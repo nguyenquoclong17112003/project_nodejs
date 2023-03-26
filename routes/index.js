@@ -1,8 +1,22 @@
-var express = require("express");
+const express = require("express");
 var router = express.Router();
-var mongoose = require("mongoose");
+const mongoose = require("mongoose");
+//
+// 1
+
+const cors = require("cors");
+const dotenv = require("dotenv");
+const cookieParser = require("cookie-parser");
+
+const app = express();
+
+app.use(cors());
+app.use(cookieParser());
+app.use(express.json());
+// 2
 
 /* GET home page. */
+
 router.get("/", function (req, res, next) {
   res.render("index");
 });
